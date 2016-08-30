@@ -20,11 +20,11 @@ $(document).ready(function() {
             newItem[prop] = $("#" + prop).val();
         }
         contactList.push(newItem);
-        $("#contactList").append("<li id='" + newItem.firstName + "'>" + newItem.firstName + " " + newItem.lastName + "</li>");
+        $("#contactList").append("<li>" + newItem.firstName + " " + newItem.lastName + "</li>");
     });
 
-    $("#contactList a").click(function() {
-      $("form").css("width", "66.6666%");
-      $("aside").show();
+    $("#contactList").click(function() {
+      $("form").css("width", "66.66%");
+      $("#contactInfo").css("display", "inline");
     });
 });
