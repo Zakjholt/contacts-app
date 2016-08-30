@@ -14,29 +14,29 @@
         <h1>Contacts</h1>
         <h3>Add a contact:</h3>
         <form>
-            <label for="firstName">First name<input type="text" id="firstName"></label>
-            <label for="lastName">Last name<input type="text" id="lastName"></label>
+            <label for="firstName">First name<input type="text" id="firstName" required></label>
+            <label for="lastName">Last name<input type="text" id="lastName" required></label>
             <label for="phoneNumber">Phone Number <input type="tel" id="phoneNumber"></label>
             <label for="street">Street<input type="text" id="street"></label>
             <label for="city">City<input type="text" id="city"></label>
             <label for="state">State<input type="text" id="state"></label>
-            <button class="btn btn-primary">Add</button>
+            <button type="submit" class="btn btn-primary">Add</button>
         </form>
         <aside id="contactInfo">
-          <h2><span id="infoTitle"></span></h2>
-          <p>First name: <span id="infoFirstName"></span></p>
-          <p>Last Name:<span id="infoLastName"></span></p>
-          <p>Phone Number:<span id="infoPhoneNumber"></span></p>
-          <p>Addresses:
-            <ul id="infoAddresses">
-            </ul>
-          </p>
+            <h2><span id="infoTitle"></span></h2>
+            <p>First name: <span id="infoFirstName"></span></p>
+            <p>Last Name:<span id="infoLastName"></span></p>
+            <p>Phone Number:<span id="infoPhoneNumber"></span></p>
+            <p>Addresses:
+                <ul id="infoAddresses">
+                </ul>
+            </p>
         </aside>
         <section>
-          <h2>Contact List:</h2>
-          <ul id="contactList">
+            <h2>Contact List:</h2>
+            <ul id="contactList">
 
-          </ul>
+            </ul>
         </section>
     </div>
 
