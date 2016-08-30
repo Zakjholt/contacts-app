@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contacts application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Contacts</h1>
+        <h3>Add a contact:</h3>
+        <form>
+            <label for="firstName">First name<input type="text" id="firstName"></label>
+            <label for="lastName">Last name<input type="text" id="lastName"></label>
+            <label for="phoneNumber">Phone Number <input type="tel" id="phoneNumber"></label>
+            <label for="street">Street<input type="text" id="street"></label>
+            <label for="city">City<input type="text" id="city"></label>
+            <label for="state">State<input type="text" id="state"></label>
+            <button class="btn btn-primary">Add</button>
+        </form>
+        <aside id="contactInfo">
+          <h2><span id="infoTitle"></span></h2>
+          <p>First name: <span id="infoFirstName"></span></p>
+          <p>Last Name:<span id="infoLastName"></span></p>
+          <p>Phone Number:<span id="infoPhoneNumber"></span></p>
+          <p>Addresses:
+            <ul id="infoAddresses">
+            </ul>
+          </p>
+        </aside>
+        <section>
+          <h2>Contact List:</h2>
+          <ul id="contactList">
+
+          </ul>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

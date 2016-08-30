@@ -1,0 +1,11 @@
+label, input {
+  display: block;
+  width: 100%;
+  line-height: 1.5em;
+  margin-top: 5px;
+}
+#contactInfo {
+  box-sizing: border-box;
+  width: 33.33%
+  display:none;
+}
