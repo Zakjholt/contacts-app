@@ -12,13 +12,14 @@
 
     <div class="container">
         <h1>Contacts</h1>
-        <h3>Add a contact:</h3>
         <form>
+            <h3>Add a contact:</h3>
             <label for="firstName">First name</label>
             <input type="text" id="firstName">
             <label for="lastName">Last name</label>
             <input type="text" id="lastName">
             <label for="phoneNumber">Phone Number</label>
+            <button id="addPhoneNumber" class="btn">Add Phone Number</button>
             <input type="tel" id="phoneNumber">
             <label for="street">Street</label>
             <input type="text" id="street">
@@ -26,7 +27,8 @@
             <input type="text" id="city">
             <label for="state">State</label>
             <input type="text" id="state">
-            <button class="btn btn-primary">Add</button>
+            <button id="addAddress" class="btn">Add address</button>
+            <button id="addContact" class="btn btn-primary">Add</button>
         </form>
         <aside id="contactInfo">
             <h2><span id="infoTitle"></span></h2>

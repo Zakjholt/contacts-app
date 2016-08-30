@@ -13,7 +13,7 @@ var current;
 
 $(document).ready(function() {
 
-    $("button").click(function(e) {
+    $("#addContact").click(function(e) {
         e.preventDefault();
         if ($("#firstName").val() !== "" && $("#lastName").val() !== "") {
           var newItem = Object.create(Person);
@@ -22,6 +22,7 @@ $(document).ready(function() {
           }
           contactList.push(newItem);
           $("#contactList").append("<li>" + newItem.firstName + " " + newItem.lastName + "</li>");
+          $("input").val("");
         } else {
           alert("First and Last names are required");
         }
@@ -36,11 +37,9 @@ $(document).ready(function() {
       $("#infoTitle").text(item.firstName + " " + item.lastName);
       $("#infoFirstName").text(item.firstName);
       $("#infoLastName").text(item.lastName);
-      $("#infoPhoneNumber").text(item.PhoneNumber);
+      $("#infoPhoneNumber").text(item.phoneNumber);
       $("#infoAddresses").empty();
-      $("#infoAddresses").append("<li>" + item.street + "</li>");
-      $("#infoAddresses").append("<li>" + item.city + "</li>");
-      $("#infoAddresses").append("<li>" + item.state + "</li>");
+      $("#infoAddresses").append("<li>" + item.street + ' ' + item.city + ', ' + item.state + "</li>");
 
     });
 });
